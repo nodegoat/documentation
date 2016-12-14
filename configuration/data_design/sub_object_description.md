@@ -1,0 +1,3 @@
+### Sub-Object Description
+
+Sub-Objects can include 'Sub-Object Descriptions'. These follow the same logic as the Object Descriptions (see above) but will relate to the Sub-Object of the Object and not directly to the Object itself. In the example of the painting, numerous Sub-Objects can be added to describe the production of the painting (over time, in different studios) as well as numerous Sub-Objects describing the ownership of the painting (related to persons or institutes).

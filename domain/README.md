@@ -1,0 +1,3 @@
+# Domain
+
+This section covers the modules in a nodegoat Domain. A nodegoat Domain is either a 'personal research domain' hosted on nodegoat.net (single user) or a nodegoat installation on a server (multi user). Each Domain can host one set of Types, Classifications and Reversed Classifications. In each domain, multiple Projects can be created that make use of these Types, Classifications and Reversed Classifications in varying configurations.

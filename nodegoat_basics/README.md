@@ -1,0 +1,3 @@
+# nodegoat Basics
+
+[based on pro git] So, what is nodegoat in a nutshell? This is an important section to absorb, because if you understand what nodegoat is and the fundamentals of how it works, then using nodegoat effectively will probably be much easier for you. As you learn nodegoat, try to clear your mind of the things you may know about other database and visualisation software packages; doing so will help you avoid subtle confusion when using the tool. nodegoat stores and thinks about information much differently than these other systems, even though the user interface is fairly similar, and understanding those differences will help prevent you from becoming confused while using it.

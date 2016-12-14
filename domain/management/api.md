@@ -1,0 +1,3 @@
+### API
+
+The nodegoat API allows external access to your projects and its data. Access can be both open (no authorisation needed) and authorised (based on the Users that are already part of the nodegoat Domain). See the [API configuration section](/configuration/API/README.md) for information on how to configure the API. The [API access section](/usage/API/README.md) provides specifications on how to query the API.

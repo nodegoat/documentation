@@ -1,0 +1,3 @@
+## API
+
+The API configuration module allows you to select and configure the Projects that can be accessed through the API and the Users that can access the API. The API uses the Projects present in the nodegoat Domain for access to the data model and configurations such as Filters and Scopes. Additionally the Users that have access to these Projects can be used to provide optional authentication to be allowed access the Projects through the API.
