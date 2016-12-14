@@ -5,7 +5,7 @@ The API configuration module allows you to select and configure the Projects tha
 ### Projects
 
 In the API configuration module you select the Projects that can be accessed externally through the API. After saving the selection, there are specific configuration parameters for each selected Project.
-*    Indicate whether the Project is the default Project that can be accessed through the API. This allows you to leave out the Project ID [path parameter](usage/API/query.md#path) when querying the API.
+*    Indicate whether the Project is the default Project that can be accessed through the API. This allows you to leave out the Project ID [path parameter](/usage/API/query.md#path) when querying the API.
 *    Require authentication to access the Project through the API.
 
 ### Authentication
@@ -36,4 +36,4 @@ To assign a User to a client, click 'add' at the relevant client, and:
 *    Search and select the relevant User.
 *    Provide the duration the User is allowed access through the client. Leave the validity period empty to allow for indefinite access. You can change the validity period by editing the User assignment.
 
-The required passkey (token) is generated automatically. Consult the [API usage section](usage/API/README.md) to start making authenticated requests through the client with the generated User passkey (token).
+The required passkey (token) is generated automatically. Consult the [API usage section](/usage/API/README.md) to start making authenticated requests through the client with the generated User passkey (token).
