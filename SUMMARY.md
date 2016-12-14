@@ -28,6 +28,8 @@
         * [Organise](configuration/project/organise.md)
     * [Users](configuration/users/README.md)
     * [API](configuration/API/README.md)
+		* [Projects](configuration/API/README.md#projects)
+		* [Authentication](configuration/API/README.md#authentication)
     * [Public Interface](configuration/public_interface/README.md)
     * [Import](configuration/import/README.md)
     * [Linked Data](configuration/linked_data/README.md)

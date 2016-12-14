@@ -4,8 +4,8 @@
 *   The nodegoat API is [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer).
 *   The API follows the [OAuth 2.0](https://oauth.net/2/) protocol when authentication is required to access the Projects.
     *   Make sure to always send requests over HTTPS.
-    *   Provide authorisation tokens as 'bearer' in the request's Authorisation header.
-    *   Failure to provide authentication tokens over HTTPS will reset the token.
+    *   Provide authentication tokens as 'bearer' in the request's Authorisation header.
+    *   Failure to provide authentication tokens over HTTPS will reset the token. The newly generated token can be accessed through the API configuration module.
 *   Error messages and other non-fatal messages can be found in the response's root. Errors are provided in the key 'error', its description in the key 'error_description'. Additional non-fatal messages can be found in the key 'msg' which contains an array of messages with the following keys:
     *   label: identifying code belonging to the message.
     *   description: Human-readable text providing additional information, used to assist the client in understanding the error that occurred.
