@@ -1,6 +1,6 @@
 ### Basic principles
 
-*   All responses are encoded as JSON.
+*   All responses are objects encoded in JSON.
 *   The nodegoat API is [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer).
 *   The API follows the [OAuth 2.0](https://oauth.net/2/) protocol when authentication is required to access the Projects.
     *   Make sure to always send requests over HTTPS.

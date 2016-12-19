@@ -19,7 +19,7 @@ A client serves to identify the external requests made to your nodegoat Domain.
 To add a client:
 *    Specify whether the client is allowed access (active or inactive). You can change this state by editing the client.
 *    Enter the name/identity of the client.
-*    Provide the duration the client is allowed access. Leave the validity period empty to allow for indefinite access. You can change the validity period by editing the client.
+*    Provide the default validity period Users assigned to the client are allowed access to the API through the client. Leave the validity period empty to set the default period to allow for indefinite access. You can change the default validity period by editing the client.
 
 Currently clients can not make authorisation requests on behalf of nodegoat Users. You have to manually assign Users to the client to be able to gain access to your Projects.
 
@@ -34,6 +34,6 @@ Users are assigned to clients to provide the necessary authentication when a cli
 To assign a User to a client, click 'add' at the relevant client, and:
 *    Specify whether the client is allowed access (active or inactive) through the client. You can change this state by editing the User assignment.
 *    Search and select the relevant User.
-*    Provide the duration the User is allowed access through the client. Leave the validity period empty to allow for indefinite access. You can change the validity period by editing the User assignment.
+*    Provide the validity period the User is allowed access to the API through the client. Leave the validity period empty to allow for indefinite access. You can change the validity period by editing the User assignment.
 
 The required passkey (token) is generated automatically. Consult the [API usage section](/usage/API/README.md) to start making authenticated requests through the client with the generated User passkey (token).
