@@ -62,10 +62,7 @@ Query the API for a Type's Data Design to get an overview of the possible IDs fo
 | -- | -- |
 | object_id = *ID*(,*ID*) | Select the specified Object(s). |
 | search = *value* | Quick search Objects for 'value'. |
-| object_definition[*ID*] = *value* | Query Objects for definitions that contain 'value'. |
-| object_sub[*ID*][object_sub_date] = *value* | Query Objects for Sub-Objects that fall within the date specified by 'value'. |
-| object_sub[*ID1*][object_sub_definition][*ID2*] = *value* | Query Objects for Sub-Objects for definitions that contain 'value'. |
-| filter[*target*] = *value* | When a Filter is applied in the query path, the filter parameter allows you to target and change the configuration of the Filter before the Filter is applied. |
+| form = *value* | Apply a JSON-formatted [filter](/usage/filter/README.md). The form parameter allows you to customise and apply full-featured nodegoat filters to your query. |
 
 ##### ://nodegoat/A/design/B?C
 
