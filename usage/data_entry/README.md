@@ -1,0 +1,3 @@
+## Data Entry
+
+Once you have a Project and Data Design running, you can enter data in the Data module. Here you create new Objects in a Type or new Categories in a Classification. nodegoat follows your custom Data Design and will use the names of the Types and Classifications you have created throughout the interface. This means that you will never encounter a button like 'Create new Object in Type'. Rather, buttons will contain the name of the Type or Classification as specified in the Data Design. If you have created a Type called 'Letter' you will be able to navigate to this Type in the Data module and click 'Add Letter' to create a new Object in this Type. 

@@ -24,46 +24,66 @@ To make an unauthenticated request, you use the subdomain of your nodegoat Domai
 
 #### Path
 
-The path tells the API what Project and data you want to access. The following parameters provide the API with project specific, and subsequently with data or Data Design specific request information.
+The path tells the API what Project and what data you want to access.
 
-##### ://nodegoat/A
+##### //nodegoat/A
+
+Specify which nodegoat Project to access. __Optional__.
 
 | A | Description |
 | -- | -- |
-| __/ project / *ID*__ | Optional. Access a specific nodegoat Project. If this is left out, the default configured Project is assumed. |
-| __/ data or / design__ | Specify the mode. Access the Project’s data or Data Design. |
+| __/ project / *ID*__ | Access a specific nodegoat Project. If this is left out, the default configured Project is assumed. |
 
-##### ://nodegoat/A/data/B
+##### //nodegoat/A/B
 
-| B | Description |
-| -- | -- |
-| __/ type / *ID*__ | Access the specified Type. |
-| __/ scope / *ID*__ | Optional. Apply the specified scope to the request. This allows you to generate highly-relational and ready-to-use data structures using nodegoat Scope functionality. |
-| __/ filter / *ID*__ | Optional. Apply the specified filter to the request. Additionally, the filter can be manipulated in the query component of the request. |
-| __/ object / *ID*(,*ID*)__ | Optional. Select the specified Object(s). |
-
-##### ://nodegoat/A/design/B
+Specify the mode. One of the following parameters has to be provided.
 
 | B | Description |
 | -- | -- |
-| __/ type / *ID*(,*ID*)__ | Request the specified Type(s). |
+| __/ *ID*__ or __?id = *ID*__ | Directly access Objects with their corresponding nodegoat IDs or other identifiers (see [Data Design](configuration/data_design/README.md) on how to indicate what Object Descriptions can be used for identification). The ID can also be provided using the query component *id* (i.e. when identifiers contain characters reserved for URLs). |
+| __/ data__ | Access the Project’s data. |
+| __/ design__ | Access the Projects's Data Design. |
+
+##### //nodegoat/A/B:data/C
+
+Specify which Type to access.
+
+| C | Description |
+| -- | -- |
+| __/ type / *ID*__ | Access data for the specified Type. |
+
+##### //nodegoat/A/B:data/C/D
+
+Apply Project and Type specific operations to the request. More than one of the following parameters can be provided. __Optional__.
+
+| D | Description |
+| -- | -- |
+| __/ scope / *ID*__ | Apply the specified scope to the request. This allows you to generate highly-relational and ready-to-use data structures using nodegoat Scope functionality. |
+| __/ filter / *ID*__ | Apply the specified filter to the request. Additionally, the filter can be manipulated in the query component of the request. |
+| __/ object / *ID*(,*ID*)__ | Select the specified Object(s). |
+
+##### //nodegoat/A/B:design/C
+
+| C | Description |
+| -- | -- |
+| __/ type / *ID*(,*ID*)__ | Access the Data Design for the specified Type(s). |
 
 #### Query component
 
 The query component allows you to further specify your request by means of search parameters. It is also possible to POST the query component instead of using GET (e.g. when creating large requests that exceed the GET limit).
 
-##### ://nodegoat/A/data/B?C
+##### //nodegoat/A/B:data/C/D?Q
 
 All parameters in the query component are optional. When combined, each additional parameter will filter the result (AND).
 
 Query the API for a Type's Data Design to get an overview of the possible IDs for Object Descriptions, Sub-Object Details, and Sub-Object Descriptions.
 
-| C | Description |
+| Q | Description |
 | -- | -- |
-| object_id = *ID*(,*ID*) | Select the specified Object(s). |
-| search = *value* | Quick search Objects for 'value'. |
-| form = *value* | Apply a JSON-formatted [filter](/usage/filter/README.md). The form parameter allows you to customise and apply full-featured nodegoat filters to your query. |
+| __object_id = *ID*(,*ID*)__ | Select the specified Object(s). |
+| __search = *value*__ | Quick search Objects for 'value'. |
+| __form = *value*__ | Apply a JSON-formatted [filter](/usage/filter/README.md). The form parameter allows you to customise and apply full-featured nodegoat filters to your query. |
 
-##### ://nodegoat/A/design/B?C
+##### //nodegoat/A/B:design/C?Q
 
 Design currently does not have an additional query component.
