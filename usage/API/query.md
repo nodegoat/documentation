@@ -46,7 +46,7 @@ Specify the mode. One of the following parameters has to be provided.
 
 ##### //nodegoat/A/B:data/C
 
-Specify which Type to access.
+Specify for which Type you want to access the data.
 
 | C | Description |
 | -- | -- |
@@ -54,7 +54,7 @@ Specify which Type to access.
 
 ##### //nodegoat/A/B:data/C/D
 
-Apply Project and Type specific operations to the request. More than one of the following parameters can be provided. __Optional__.
+Apply Project- and Type-specific operations to the request. More than one of the following parameters can be provided. __Optional__.
 
 | D | Description |
 | -- | -- |
@@ -63,6 +63,8 @@ Apply Project and Type specific operations to the request. More than one of the 
 | __/ object / *ID*(,*ID*)__ | Select the specified Object(s). |
 
 ##### //nodegoat/A/B:design/C
+
+Specify for which Type(s) to access the Data Design.
 
 | C | Description |
 | -- | -- |
