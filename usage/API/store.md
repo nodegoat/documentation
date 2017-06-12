@@ -98,7 +98,7 @@ To overwrite an Object specified in the path 'https://nodegoat.io/project/1/data
 OBJECT
 ```
 
-To overwrite Objects specified in the submitted data you access 'https://nodegoat.io/project/1/data/type/2/object/' and use keys to specify the Object IDs:
+To overwrite Objects specified in the submitted data you access 'https://nodegoat.io/project/1/data/type/2/object/' and use keys in a dictionary to specify the Object IDs:
 
 ```json
 {
@@ -115,7 +115,7 @@ To add new Objects to a Type you access 'https://nodegoat.io/project/1/data/type
 }
 ```
 
-To both add and update Objects in a single request you access 'https://nodegoat.io/project/1/data/type/2/object/' and use the key 'add' to provide and array with Objects to be added and use the key 'update' to provide a list with the Objects to be overwritten:
+To both add and update Objects in a single request you access 'https://nodegoat.io/project/1/data/type/2/object/' and use the key 'add' to provide and array with Objects to be added and use the key 'update' to provide a dictionary with the Objects to be overwritten:
 
 ```json
 {
@@ -135,7 +135,7 @@ To update an Object specified in the path 'https://nodegoat.io/project/1/data/ty
 OBJECT
 ```
 
-To update Objects specified in the submitted data you access 'https://nodegoat.io/project/1/data/type/2/object/' and use keys to specify the Object IDs:
+To update Objects specified in the submitted data you access 'https://nodegoat.io/project/1/data/type/2/object/' and use keys in a dictionary to specify the Object IDs:
 
 ```json
 {
@@ -146,11 +146,12 @@ To update Objects specified in the submitted data you access 'https://nodegoat.i
 
 ##### DELETE
 
-To delete Objects, you either apply the method DELETE to the path to a specific Object, e.g. 'https://nodegoat.io/project/1/data/type/2/object/3', or you submit an array with the Object IDs:
+To delete Objects, you either apply the method DELETE to the path to a specific Object, e.g. 'https://nodegoat.io/project/1/data/type/2/object/3', or you submit a dictionary with the Object IDs:
 
 ```json
 {
-	[3,333]
+	"3": true,
+	"333": true
 }
 ```
 

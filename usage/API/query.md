@@ -92,7 +92,7 @@ Design currently does not have an additional query component.
 
 #### Response
 
-The result from your request to the nodegoat API can be found in the JSON response under the key 'data'. The result is a JSON object that promotes direct lookup and access to its structure.
+The result from your request to the nodegoat API can be found in the JSON response under the key 'data'. The result is a JSON dictionary that promotes direct lookup and access to its structure.
 
 The specific response depends on the mode (design or data, see the [previous Query section](/usage/API/query.md)) of your request.
 
