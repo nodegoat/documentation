@@ -50,10 +50,8 @@ Apply Project- and Type-specific operations to the request. You can either targe
 
 The request method allows you to specify the operation you want to perform. Each method allows you to submit nodegoat Objects that are structured using the [Query Design response](/usage/API/query.md#design) and formatted following the [Query Data response](/usage/API/query.md#data):
 
-OBJECT =
-
 ```json
-{
+OBJECT = {
     "object": {
         "object_name_plain": "A Node in nodegoat",
     },
