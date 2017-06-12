@@ -24,7 +24,7 @@ Specify which nodegoat Project to access. __Optional__.
 
 ##### //nodegoat/A/B
 
-Specify the mode. One of the following parameters has to be provided.
+Specify the mode.
 
 | B | Description |
 | -- | -- |
