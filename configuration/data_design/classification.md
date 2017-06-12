@@ -1,15 +1,37 @@
 ### Classification
 
-A Classification contains lists of categories that you use to classify objects.
+Classifications contain Categories. Categories are 'labels'.
 
-Classifications should be used to label objects with statements that are made about the object by an observer. In a collection of paintings, a classification can be used with categories like 'impressionism', 'pointillism', 'cubism', 'expressionism, 'surrealism' to classify the paintings. Since you are free to structure and enter your classifications and categories, you can use your own categories or use an existing standard.
+#### Add / Edit a Classification
 
-**Example:**
+To add a Classification, click 'Add Classification'.
 
-_In a Data Design with the Types 'Person', 'Institute', and 'Letter', you could use three Classifications: 'Gender', 'Legal entity', and 'Epistolary value'._
+To edit a Classification, click 'edit' at the relevant Classification.
 
-_The classification Gender would contain categories like 'female', 'male', 'transgender' and would be used to classify objects in the Type 'Person'._
+Specify the name of the Classification. This name is used throughout nodegoat to identify this Classification.
 
-_The classification Legal entity would contain categories like 'private company', 'governmental institute', 'association', 'NGO' and would be used to classify objects in the Type 'Institute'._
+Specify the color of the Classification. This color is the default color of the Classification and will be used for coloring in visualisations and highlights when no other color has been specified in the [Project](/configuration/project/organise.md) or [Conditions](/usage/conditions/README.md).
 
-_The classification Epistolary value world contain categories like 'professional communication', 'personal communication', 'phatic communication' and would be used to classify objects in the Type 'Letter'._
+Specify [Conditions](/usage/conditions/README.md) that are used for a Classification.
+
+##### Category
+
+Check the checkbox to enable a static name field for each Category in this Classification. If the static name field is disabled, at least one Category Description has to be used for the name of the Object.
+
+Check the checkbox to show this name in the overviews.
+
+###### Category descriptions
+
+Click 'add' to create new Category Descriptions.
+
+Give an Category Description a name by entering a name.
+
+The same kinds of data can be selected for a Category Description as for an Object Description.
+
+#### Empty a Classification
+
+To empty a Classification, click 'empty' at the relevant Classification. This will remove all the Objects in this Classification while leaving the Design of this Classification in tact.
+
+#### Delete a Classification
+
+To delete a Classification, click 'delete' at the relevant Classification. This will remove both the Objects in this Classification plus the Design of this Classification.

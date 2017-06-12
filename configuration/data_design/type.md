@@ -1,9 +1,130 @@
 ### Type
 
-A Type covers the broadest definition of a set of objects within your data.
+Types contain Objects. Objects are things. In the Data Design module you design the structure of your Types. This structure describes the Objects in a Type. Objects are described by Object Descriptions, Sub-Objects, and Sub-Object Descriptions.
 
-Should your dataset include a variety of persons who all have different capacities, all of them will belong to the Type 'Person'. The same approach can be applied to pieces of art such as paintings, sculptures, or copperware: all could be part of the Type 'Artefact'.
+#### Add / Edit a Type
 
-**Example:**
+To add a Type, click 'Add Type'.
 
-_To analyse personal relations by means of institutional affiliation and epistolary communication, you can use four Types: 'Person', 'Institute', 'Letter', 'City'. The Type Person contains all the Objects of persons, the Type Institute contains all institute objects, the Type Letter contains all letter Objects, and all the city Objects will be in the Type City._
+To edit a Type, click 'edit' at the relevant Type.
+
+In the form that opens, you can specify the name of the Type. This name is used throughout nodegoat to identify this Type.
+
+You can specify a color for the Type. This color is the default color of the Type and will be used for coloring in visualisations and highlights when no other color has been specified in the [Project](/configuration/project/organise.md) or [Conditions](/usage/conditions/README.md).
+
+Specify [Conditions](/usage/conditions/README.md) that are used for a Type.
+
+Specify one or more definitions that describe a type. These definitions are exposed via the [API](/configuration/API/README.md).
+
+##### Object
+
+Click the tab 'Object' to configure the name of Objects as well as Object Descriptions.
+
+###### Object name
+
+Check the checkbox to enable a static name field for each Object in this Type. If the static name field is disabled, at least one Object Description has to be used for the name of the Object.
+
+Check the checkbox to show this name in the overviews.
+
+###### Object descriptions
+
+Intrinsic/static attributes of an Object are described by Object Descriptions.
+
+Click 'add' to create new Object Descriptions.
+
+Give an Object Description a name by entering a name.
+
+Select the kind of data that will be stored in the Object Description:
+
+| Name | Description | Limit |
+| -- | -- | -- |
+| String | A single line string. | 5000 characters |
+| Type | A relation to another Object in the same or a different Type. One Object Description can contain multiple relations to the referenced Type. | N/A |
+| Classification |  A relation to a Category in a Classification. One Object Description can contain multiple relations to one Classification. | N/A |
+| Reversed Classification |  A relation to a Reversed Classification. | N/A |
+| Integer | An integer (whole number, no decimals). | 11 digits |
+| Text | Non-formatted text field. | 65535 characters |
+| Text (layout) | Formatted text field. | 65535 characters |
+| Text (layout) | Formatted text field. In this Object Description, words can be related to other Objects | 65535 characters |
+| True/False | A true/false field. | N/A |
+| Date | A date field, using the following date formats:<ul><li>y (1687)</li><li>-y (-800)</li><li> m-y (03-1687 / 3-1687)</li><li>m--y (03--800 / 3--800)</li><li>-m-y (-03-800 / -3-800)</li><li>d-m-y (09-03-1687 / 9-3-1687)</li><li> d-m--y (09-03--800 / 9-3--800)</li><li>-d-m-y (-09-03-800 / -9-3-800</li></ul> | N/A |
+| Media | Upload any kind of media (i.e. png, pdf, mp3). | N/A |
+| Media (External) | Link to external media resources (e.g. http://url.com/map.png or http://youtu.be/jm1os4VzTgA) | N/A |
+| External | An external relation using URIs. URIs can be plain URLs, or can be retrieved by connecting to the nodegoat Linked Data module to dynamically query SPARQL/API resources like VIAF or Wikipedia | N/A |
+
+Check the checkbox 'multiple values' to allow multiple values to be stored in an Object Description. This option is only available for relational Object Descriptions (Type, Classification)
+
+Check the checkbox 'unique' to allow only unique values to be stored in an Object Description.
+
+Check the checkbox 'in name' to use the value or values stored in an Object Description as the name or part of the name of the Object. If the static name field is disabled, this option has to be set at least once. If not, nodegoat will not be able to generate a name for the Object.
+
+Check the checkbox 'search' to allow an Object Description to be searched via the Quick Search functionality.
+
+Check the checkbox 'identifier' to use the value or values in an Object Description as external identifiers.
+
+In a multi-user Domain: Select the minimum clearance level a user needs to edit an Object Description.
+
+In a multi-user Domain: Select the minimum clearance level a user needs to view an Object Description.
+
+##### Sub-Objects
+
+Changing/contextualised attributes of an Object are described by Sub-Objects.
+
+Click the tab 'Sub-Object' to configure the Sub-Objects of a Type.
+
+Click 'add' to create new Sub-Object.
+
+Give a Sub-Object a name by entering a name.
+
+Specify whether a Sub-Object may occur only once per Object by selecting 'Unique'.
+
+Specify whether a Sub-Object is required for every Object by selecting 'Required'.
+
+Specify whether the temporality of a Sub-Object is defined by a date or a period.
+
+In a multi-user Domain: Select the minimum clearance level a user needs to edit the temporality of a Sub-Object.
+
+In a multi-user Domain: Select the minimum clearance level a user needs to view the temporality of a Sub-Object.
+
+Select the source of the date of a Sub-Object.
+
+Check the checkbox 'lock' to only allow for Location References in a Sub-Object.
+
+Select which Type will be the default Type for the Location Reference of a Sub-Object. 
+
+Check the checkbox 'lock' to lock the selected Type for the Location References in a Sub-Object.
+
+Select which Sub-Object of the selected Type will be the default Sub-Object for the Location Reference of a Sub-Object. 
+
+Check the checkbox 'lock' to lock the selected Sub-Object for the Location References in a Sub-Object.
+
+Select the source of the Location Reference of a Sub-Object.
+
+In a multi-user Domain: Select the minimum clearance level a user needs to edit the Location Reference of a Sub-Object.
+
+In a multi-user Domain: Select the minimum clearance level a user needs to view the Location Reference of a Sub-Object.
+
+##### Sub-Object Descriptions
+
+Click 'add' to create new Sub-Object Descriptions.
+
+Give a Sub-Object Description a name by entering a name.
+
+The same kinds of data can be selected for a Sub-Object Description as for an Object Description.
+
+In a multi-user Domain: Select the minimum clearance level a user needs to edit a Sub-Object Description.
+
+In a multi-user Domain: Select the minimum clearance level a user needs to view a Sub-Object Description.
+
+#### Save a Type
+
+Click 'Save Type' to save a Type.
+
+
+#### Empty a Type
+
+To empty a Type, click 'empty' at the relevant Type. This will remove all the Objects in this Type while leaving the Design of this Type in tact.
+
+#### Delete a Type
+
+To delete a Type, click 'delete' at the relevant Type. This will remove both the Objects in this Type plus the Design of this Type.

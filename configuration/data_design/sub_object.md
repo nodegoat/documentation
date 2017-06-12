@@ -1,5 +1,0 @@
-### Sub-Object
-
-Sub-Objects are dynamic components that describe intrinsic circumstances of an Object over space and time. In this context, dynamic means either a 'changing' aspect of an Object or an aspect of an Object that has specific geographical coordinates and/or temporal attributes. Sub-Objects always have geographical coordinates and temporal attributes and describe a 'state' of an Object.
-
-By including a number of Sub-Objects within one Object, the 'circumstance' or 'biography' of an Object is reconstructed. Although the location and time of the birth of a person do not change, each of these aspects are described in one Sub-Object as they indicate a change in the state of the Object. The place of residence of a person on the other hand does change regularly and will be described in numerous Sub-Objects. Accordingly, the Sub-Object 'Birth' will be included once (unique), while the Sub-Object ‘Place of Residence’ can be included multiple times.

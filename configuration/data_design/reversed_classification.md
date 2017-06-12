@@ -1,3 +1,2 @@
 ### Reversed Classification
 
-Instead of identifying classifications and assigning these to objects (like 'female' or 'German'), a you can also define a filter in which you define any number of parameters and use this to assign classifications to objects. This will reverse the classifying process as the definition of the classification is identified by the exchange between parameters of the classification and attributes of the object.

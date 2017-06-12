@@ -4,11 +4,11 @@ To query the nodegoat API you need a valid domain, a valid path, and a valid que
 
 **Authenticated, access Project 1, access Project’s data, Type 2, apply Scope 3, apply Filter 4, request Object 5 & 6 & 7, request Object 8, quick search for 'A', query Object Description 9 for 'B', change the specified filter parameter to 'C':**
 
-https://nodegoat.io/project/1/data/type/2/scope/3/filter/4/object/5,6,7?object_id=8&search=A&object_description[9]=B&filter[a][b]=C
+GET https://nodegoat.io/project/1/data/type/2/scope/3/filter/4/object/5,6,7?object_id=8&search=A&object_description[9]=B&filter[a][b]=C
 
 **Authenticated, access Project 1, access Project’s Data Design, request Types 2 & 3 & 4**
 
-https://nodegoat.io/project/1/design/type/2,3,4
+GET https://nodegoat.io/project/1/design/type/2,3,4
 
 #### Domain
 
@@ -40,7 +40,7 @@ Specify the mode. One of the following parameters has to be provided.
 
 | B | Description |
 | -- | -- |
-| __/ *ID*__ or __?id = *ID*__ | Directly access Objects with their corresponding nodegoat IDs or other identifiers (see [Data Design](configuration/data_design/README.md) on how to indicate what Object Descriptions can be used for identification). The ID can also be provided using the query component *id* (i.e. when identifiers contain characters reserved for URLs). |
+| __/ *ID*__ or __?id = *ID*__ | Directly access Objects with their corresponding nodegoat IDs or other identifiers (see [Data Design](configuration/data_design/README.md) on how to indicate what Object Descriptions can be used for identification). The ID can also be provided using the query component *id* (both GET and POST). The query component has to be used when identifiers contain characters reserved for URLs. |
 | __/ data__ | Access the Project’s data. |
 | __/ design__ | Access the Projects's Data Design. |
 
@@ -70,7 +70,7 @@ Specify for which Type(s) to access the Data Design.
 | -- | -- |
 | __/ type / *ID*(,*ID*)__ | Access the Data Design for the specified Type(s). |
 
-#### Query component
+#### Component
 
 The query component allows you to further specify your request by means of search parameters. It is also possible to POST the query component instead of using GET (e.g. when creating large requests that exceed the GET limit).
 
@@ -89,3 +89,17 @@ Query the API for a Type's Data Design to get an overview of the possible IDs fo
 ##### //nodegoat/A/B:design/C?Q
 
 Design currently does not have an additional query component.
+
+#### Response
+
+The result from your request to the nodegoat API can be found in the JSON response under the key 'data'. The result is a JSON object that promotes direct lookup and access to its structure.
+
+The specific response depends on the mode (design or data, see the [previous Query section](/usage/API/query.md)) of your request.
+
+##### Design
+
+In design mode the result contains the requested Type IDs with the Type's configuration.
+
+##### Data
+
+In data mode the result contains the requested or queried Object IDs with the Object's definition.
