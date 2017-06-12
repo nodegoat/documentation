@@ -2,9 +2,9 @@
 
 To query the nodegoat API you need a valid domain, a valid path, and a valid query component. The following URL contains the possible basic domain, path, and query parameters:
 
-**Authenticated, access Project 1, access Project’s data, Type 2, apply Scope 3, apply Filter 4, request Object 5 & 6 & 7, request Object 8, quick search for 'A', query Object Description 9 for 'B', change the specified filter parameter to 'C':**
+**Authenticated, access Project 1, access Project’s data, Type 2, apply Scope 3, apply Filter 4, request Object 5 & 6 & 7, request Object 8, quick search for 'A', apply a JSON-formatted filter form:**
 
-GET https://nodegoat.io/project/1/data/type/2/scope/3/filter/4/object/5,6,7?object_id=8&search=A&object_description[9]=B&filter[a][b]=C
+GET https://nodegoat.io/project/1/data/type/2/scope/3/filter/4/object/5,6,7?object_id=8&search=A&form={}
 
 **Authenticated, access Project 1, access Project’s Data Design, request Types 2 & 3 & 4**
 
