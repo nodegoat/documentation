@@ -1,6 +1,8 @@
 ### Store
 
-To store data through the nodegoat API you need a valid domain, a valid path, and use user authentication. The data you submit has to be formatted in JSON. The following URL contains the possible basic domain and path parameters:
+To store data through the nodegoat API you need a valid domain, a valid path, and use user authentication. The data you submit has to be formatted in JSON. Storing data in nodegoat will start a new [transaction](https://en.wikipedia.org/wiki/Database_transaction): the transaction will be commited when all data is successfully processed, or rolled back when an error occurs.
+
+The following URL contains the possible basic domain and path parameters:
 
 **Access Project 1, access Project’s data, Type 2, target Object 3, overwrite the Object with the provided JSON-formatted Object data**
 
@@ -48,7 +50,7 @@ Apply Project- and Type-specific operations to the request. You can either targe
 
 #### Method
 
-The request method allows you to specify the operation you want to perform. Each method allows you to submit nodegoat Objects that are structured using the [Query Design response](/usage/API/query.md#design) and formatted following the [Query Data response](/usage/API/query.md#data):
+The request method allows you to specify the operation you want to perform. Each method allows you to submit nodegoat Object dictionaries that are structured using the [Query Design response](/usage/API/query.md#design) and formatted following the [Query Data response](/usage/API/query.md#data):
 
 ```json
 OBJECT = {
@@ -88,32 +90,37 @@ OBJECT = {
 
 ##### PUT
 
-When submitting data with the PUT method, you can overwrite the Object specified in the path, overwrite the Objects specified in the submitted data, or create new objects.
+When submitting data with the PUT method, you can overwrite the Object specified in the path, overwrite the Objects specified in the submitted data, or create new Objects.
 
-To overwrite an Object specified in the path 'https://nodegoat.io/project/1/data/type/2/object/3' you submit a single Object:
+To overwrite an Object specified in the path 'https://nodegoat.io/project/1/data/type/2/object/3', you submit a single Object dictionary:
 
 ```json
 OBJECT
 ```
 
-To overwrite Objects specified in the submitted data you access 'https://nodegoat.io/project/1/data/type/2/object/' and use keys in a dictionary to specify the Object IDs:
+To overwrite Objects specified in the submitted data, you access the path without an Object ID 'https://nodegoat.io/project/1/data/type/2/object/', create the key 'update', and provide a dictionary with Object IDs as keys and Object dictionaries as values:
 
 ```json
 {
-    "3": OBJECT,
-    "333": ...
+    "update": {
+		"3": OBJECT,
+		"333": ...
+	}
 }
 ```
 
-To add new Objects to a Type you access 'https://nodegoat.io/project/1/data/type/2/object/', create the key 'add', and submit an array with the Objects to be added:
+To add new Objects to a Type, you access the path without an Object ID 'https://nodegoat.io/project/1/data/type/2/object/', create the key 'add', and submit a list with Object dictionaries:
 
 ```json
 {
-    "add": [OBJECT, ...]
+    "add": [
+		OBJECT,
+		...
+	]
 }
 ```
 
-To both add and update Objects in a single request you access 'https://nodegoat.io/project/1/data/type/2/object/' and use the key 'add' to provide and array with Objects to be added and use the key 'update' to provide a dictionary with the Objects to be overwritten:
+To both add and update Objects in a single request, you access the path without an Object ID 'https://nodegoat.io/project/1/data/type/2/object/' and provide the key 'add' with a list and the key 'update' with a dictionary:
 
 ```json
 {
@@ -127,13 +134,13 @@ To both add and update Objects in a single request you access 'https://nodegoat.
 
 When submitting data with the PATCH method, you can update the Object specified in the path or update the Objects specified in the data. Any Object Description/Sub-Object/Sub-Object Description that is not specified in the submitted data will not be touched. For instance, this allows you to update specific Object Descriptions and append new Sub-Objects.
 
-To update an Object specified in the path 'https://nodegoat.io/project/1/data/type/2/object/3' you submit a single Object that only contains the data you want to update:
+To update an Object specified in the path 'https://nodegoat.io/project/1/data/type/2/object/3', you submit a single Object dictionary that only contains the data you want to update:
 
 ```json
 OBJECT
 ```
 
-To update Objects specified in the submitted data you access 'https://nodegoat.io/project/1/data/type/2/object/' and use keys in a dictionary to specify the Object IDs:
+To update Objects specified in the submitted data, you access the path without an Object ID 'https://nodegoat.io/project/1/data/type/2/object/' and provide a dictionary with Object IDs as keys and Object dictionaries as values:
 
 ```json
 {
@@ -144,7 +151,7 @@ To update Objects specified in the submitted data you access 'https://nodegoat.i
 
 ##### DELETE
 
-To delete Objects, you either apply the method DELETE to the path to a specific Object, e.g. 'https://nodegoat.io/project/1/data/type/2/object/3', or you submit a dictionary with the Object IDs:
+To delete Objects, you either apply the method DELETE to the path to a specific Object, e.g. 'https://nodegoat.io/project/1/data/type/2/object/3', or you access the path without an Object ID and submit a dictionary with the Object IDs as keys:
 
 ```json
 {
@@ -155,5 +162,5 @@ To delete Objects, you either apply the method DELETE to the path to a specific 
 
 #### Response
 
-The result from your submission to the nodegoat API can be found in the JSON response under the key 'data'. An array will be returned with the Object IDs that have been 'added', 'updated', or 'deleted'.
+The result from your submission to the nodegoat API can be found in the JSON response under the key 'data'. A list will be returned with the Object IDs that have been 'added', 'updated', or 'deleted'.
 
