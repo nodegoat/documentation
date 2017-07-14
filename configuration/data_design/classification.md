@@ -10,7 +10,7 @@ To edit a Classification, click 'edit' at the relevant Classification.
 
 Specify the name of the Classification. This name is used throughout nodegoat to identify this Classification.
 
-Specify the color of the Classification. This color is the default color of the Classification and will be used for coloring in visualisations and highlights when no other color has been specified in the [Project](/configuration/project/organise.md) or [Conditions](/usage/conditions/README.md).
+Specify the color of the Classification. This color is the default color of the Classification and will be used for coloring in visualisations and highlights when no other color has been specified in the [Project](/configuration/project/README.md#organise) or [Conditions](/usage/conditions/README.md).
 
 Specify [Conditions](/usage/conditions/README.md) that are used for a Classification.
 
@@ -26,7 +26,7 @@ Click 'add' to create new Category Descriptions.
 
 Give an Category Description a name by entering a name.
 
-The same kinds of data can be selected for a Category Description as for an Object Description.
+The same kinds of data can be selected for a Category Description as for an [Object Description](/configuration/project/data-design/type.md#object-descriptions).
 
 #### Empty a Classification
 

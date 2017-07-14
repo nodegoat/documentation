@@ -85,6 +85,9 @@ Query the API for a Type's Data Design to get an overview of the possible IDs fo
 | __object_id = *ID*(,*ID*)__ | Select the specified Object(s). |
 | __search = *value*__ | Quick search Objects for 'value'. |
 | __form = *value*__ | Apply a JSON-formatted [filter](/usage/filter/README.md). The form parameter allows you to customise and apply full-featured nodegoat filters to your query. |
+| __scope = *value*__ | Apply a JSON-formatted [filter](/usage/scope/README.md). The scope parameter allows you to customise and apply full-featured nodegoat scopes to your query. |
+| __limit = *nr*__ | Limit the results to a maximum amount of Objects. Handy for pagination purposes. |
+| __offset = *nr*__ | Offset the results with a specific amount of Objects. Handy for pagination purposes. |
 
 ##### //nodegoat/A/B:design/C?Q
 
