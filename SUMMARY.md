@@ -1,8 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [nodegoat Basics](nodegoat_basics/README.md)
-* [Common Use Cases](common_use_cases/README.md)
 * [Domain](domain/README.md)
     * [Data](domain/README.md#data)
     * [Management](domain/README.md#management)
@@ -63,7 +61,3 @@
             * [Path](usage/API/store.md#path)
             * [Method](usage/API/store.md#method)
 			* [Response](usage/API/store.md#response)
-* [Support](support/README.md)
-* [Frequently Asked Questions](faq/README.md)
-    * [Why is there a goat in nodegoat?](faq/q1.md)
-    * [Can I explore an exemplary project?](faq/q2.md)
