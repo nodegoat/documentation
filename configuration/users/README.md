@@ -1,6 +1,6 @@
-## User
+## Users
 
-A User can be given access to one or more Projects. By specifying a Clearance Level and Page Clearance, 
+A User can be given access to one or more Projects. By specifying a Clearance Level and Page Clearance, Users can be given access to functionalities and pages.
 
 ### Add / Edit / Delete a User
 
