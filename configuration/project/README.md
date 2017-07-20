@@ -14,9 +14,9 @@ The following settings can be specified per project:
 
 *   **Name**: The name of your project.
 *   **Full Scope**: Check his box to use and inspect all the references in your domain. If you do not check this box, any references outside of this Project will not be shown. This setting only applies when you have multiple Projects.
-*   **Source Referencing**: Check this box to enable the &#039;Source&#039; tab for every Object, Object Description, Sub-Object, and Sub-Object Description in this Project.
-*   **Object Discussion**: Check this box to enable the &#039;Object Discussion&#039; tab for every Object in this Project.
-*   **Visual Settings**: Select a stored &#039;Visual Setting&#039; to act as default Visual Setting in this Project.
+*   **Source Referencing**: Check this box to enable the 'Source' tab for every Object, Object Description, Sub-Object, and Sub-Object Description in this Project.
+*   **Object Discussion**: Check this box to enable the 'Object Discussion' tab for every Object in this Project.
+*   **Visual Settings**: Select a stored 'Visual Setting' to act as default Visual Setting in this Project.
 
 Via tabs, additional settings can be specified:
 
@@ -43,7 +43,7 @@ Select a Type Definition that will be used as primary information source.
 
 ##### Filter
 
-Select a stored Filter that will be active for this Type within this Project. This allows you, for example, to limit the Objects shown in this Projects. Select the checkbox to also apply this filtering to Sub-Objects.
+Select a stored Filter that will be active for this Type within this Project. This allows you, for example, to limit the Objects shown in this Project. Select the checkbox to also apply this filtering to Sub-Objects.
 
 ##### Condition
 
