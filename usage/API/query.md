@@ -40,7 +40,7 @@ Specify the mode. One of the following parameters has to be provided.
 
 | B | Description |
 | -- | -- |
-| __/ *ID*__ or __?id = *ID*__ | Directly access Objects with their corresponding nodegoat IDs or other identifiers (see [data Model](configuration/data_model/README.md) on how to indicate what Object Descriptions can be used for identification). The ID can also be provided using the query component *id* (both GET and POST). The query component has to be used when identifiers contain characters reserved for URLs. |
+| __/ *ID*__ or __?id = *ID*__ | Directly access Objects with their corresponding nodegoat IDs or other identifiers (see [data Model](/configuration/data_model/README.md) on how to indicate what Object Descriptions can be used for identification). The ID can also be provided using the query component *id* (both GET and POST). The query component has to be used when identifiers contain characters reserved for URLs. |
 | __/ data__ | Access the Project’s data. |
 | __/ model__ | Access the Projects's data Model. |
 

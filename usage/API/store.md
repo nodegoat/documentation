@@ -20,7 +20,7 @@ The path tells the API what mode and data you want to target, either Object data
 
 Specify which nodegoat Project to access. __Optional__.
 
-Only applicable when storing data to Objects: 'mode = data', see the [next section '//nodegoat/A/B'](/usage/API/store.md#nodegoatAB)).
+Only applicable when storing data to Objects: 'mode = data', see the [next section '//nodegoat/A/B'](/usage/API/store.md#nodegoatab)).
 
 Since the data Model transcends the Projects within a nodegoat Domain, no project should be specified when storing data to the data Model ('mode = model'). The user has to have administrator clearance to be be able change the data Model.
 
@@ -53,7 +53,7 @@ Apply Project- and Type-specific operations to the request. You can either targe
 | -- | -- |
 | __/ object / *ID*__ | Target the specified Object. |
 
-##### //nodegoat/A/B:model/C
+##### //nodegoat/B:model/C
 
 Specify for which Type you want to change the template. You can either target a Type in the path, or specify it in the data you submit. __Optional__.
 
@@ -178,7 +178,7 @@ To delete Objects, you either apply the method DELETE to the path to a specific 
 
 ##### Model
 
-Each method allows you to submit nodegoat Type template dictionaries that are formatted following the [Query Model response](/usage/API/query.md#model). nodegoat Type templates can be dynamic: it is possible to use names as IDs instead of the numeric IDs within Type templates (e.g. whenever the template references other Type templates like 'object_description_ref_type_id' or 'object_sub_details_location_ref_object_sub_details_id'), see the output of [output 'template'](usage/API/query.md#nodegoatABmodelCQ). By using name IDs instead of numeric IDs, you are able to store a whole nodegoat data Model in one go. 
+Each method allows you to submit nodegoat Type template dictionaries that are formatted following the [Query Model response](/usage/API/query.md#model). nodegoat Type templates can be dynamic: it is possible to use names as IDs instead of the numeric IDs within Type templates (e.g. whenever the template references other Type templates like 'object_description_ref_type_id' or 'object_sub_details_location_ref_object_sub_details_id'), see the output when using [parameter output = 'template'](/usage/API/query.md#nodegoatabmodelcq). By using name IDs instead of numeric IDs, you are able to store a whole nodegoat data Model in one go. 
 
 ```json
 TYPE = {
