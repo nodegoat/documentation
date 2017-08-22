@@ -86,7 +86,7 @@ Query the API for a Type's data Model to get an overview of the possible IDs for
 | __search = *value*__ | Quick search Objects for 'value'. |
 | __form = *value*__ | Apply a JSON-formatted [filter](/usage/filter/README.md). The form parameter allows you to customise and apply full-featured nodegoat filters to your query. |
 | __scope = *value*__ | Apply a JSON-formatted [filter](/usage/scope/README.md). The scope parameter allows you to customise and apply full-featured nodegoat scopes to your query. |
-| __mode = *mode*__ | Specifiy the output format: 'raw' for native and fast output of the data without additional processing such as parsing Object names, or 'default'. |
+| __output = *output*__ | Specifiy the output format: 'raw' for native and fast output of the data without additional processing such as parsing Object names, or 'default'. |
 | __limit = *nr*__ | Limit the results to a maximum amount of Objects. Handy for pagination purposes. |
 | __offset = *nr*__ | Offset the results with a specific amount of Objects. Handy for pagination purposes. |
 
@@ -96,7 +96,7 @@ All parameters in the query component are optional.
 
 | Q | Description |
 | -- | -- |
-| __mode = *mode*__ | Specifiy the output format: 'template' for relational name-based IDs instead of numeric IDs (easy for storage puposes, see [store Model](/usage/API/store.md#model)), or 'default'. |
+| __output = *output*__ | Specifiy the output format: 'template' for relational name-based IDs instead of numeric IDs (easy for storage puposes, see [store Model](/usage/API/store.md#model)), or 'default'. |
 
 #### Response
 
@@ -106,8 +106,8 @@ The specific response depends on the mode (model or data, see the [previous Quer
 
 ##### Model
 
-In model-mode the result contains the requested Type IDs with the Type's configuration.
+In mode = model the result contains the requested Type IDs with the Type's configuration.
 
 ##### Data
 
-In data mode the result contains the requested or queried Object IDs with the Object's definition.
+In mode = data the result contains the requested or queried Object IDs with the Object's definition.
