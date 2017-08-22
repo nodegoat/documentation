@@ -22,7 +22,7 @@ The following settings can be specified per project:
 
 Via tabs, additional settings can be specified:
 
-*   **Design**: Select the Types, Classifications, and Reversed Classifications you want to use in this project. Once saved, you can specify settings per Type, Classification, or Reversed Classification in the 'Organise' tab at the top of the page.
+*   **Model**: Select the Types, Classifications, and Reversed Classifications you want to use in this project. Once saved, you can specify settings per Type, Classification, or Reversed Classification in the 'Organise' tab at the top of the page.
 *   **References**: Select Types that can be used as Sub-Object location references.
 *   **Sources**: Select Types that can be used as Object source references.
 *   **Projects**: Select Projects that are available to be sourced for Filters, Scopes, Conditions, Frames, Visual Settings, and Scenarios.
@@ -35,7 +35,7 @@ Once you have selected one or more Types and/or Classifications for your project
 
 ##### Color
 
-Select a colour that will be used to highlight objects of this Type in this Project. Should you also have specified a colour for this Type in Design, the Project specific colour will override this colour.
+Select a colour that will be used to highlight objects of this Type in this Project. Should you also have specified a colour for this Type in Model, the Project specific colour will override this colour.
 
 ##### Definition
 
@@ -49,7 +49,7 @@ Select a stored Filter that will be active for this Type within this Project. Th
 
 ##### Condition
 
-Select a stored Condition that will be active for this Type within this Project. Should you also have specified a Condition for this Type in Design, the Project specific Condition will extend this Condition.
+Select a stored Condition that will be active for this Type within this Project. Should you also have specified a Condition for this Type in Model, the Project specific Condition will extend this Condition.
 
 #### Defaults
 
@@ -57,7 +57,7 @@ Select a stored Condition that will be active for this Type within this Project.
 
 Select a stored Frame that will be active for this Type within this Project.
 
-#### Design
+#### Model
 
 ##### Configuration
 

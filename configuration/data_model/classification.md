@@ -26,12 +26,12 @@ Click 'add' to create new Category Descriptions.
 
 Give an Category Description a name by entering a name.
 
-The same kinds of data can be selected for a Category Description as for an [Object Description](/configuration/project/data-design/type.md#object-descriptions).
+The same kinds of data can be selected for a Category Description as for an [Object Description](/configuration/project/data-model/type.md#object-descriptions).
 
 #### Empty a Classification
 
-To empty a Classification, click 'empty' at the relevant Classification. This will remove all the Objects in this Classification while leaving the Design of this Classification in tact.
+To empty a Classification, click 'empty' at the relevant Classification. This will remove all the Objects in this Classification while leaving the Model of this Classification in tact.
 
 #### Delete a Classification
 
-To delete a Classification, click 'delete' at the relevant Classification. This will remove both the Objects in this Classification plus the Design of this Classification.
+To delete a Classification, click 'delete' at the relevant Classification. This will remove both the Objects in this Classification plus the Model of this Classification.

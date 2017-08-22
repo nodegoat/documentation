@@ -1,4 +1,4 @@
-## Data Design
+## Data Model
 
 Click the tab 'Type' to configure your Types. 
 

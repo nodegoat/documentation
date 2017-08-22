@@ -1,18 +1,16 @@
 ## Data Entry
-
 Once you have a Project and Data Design running, you can enter data in the Data module. Here you create new Objects in a Type or new Categories in a Classification. nodegoat follows your custom Data Design and will use the names of the Types and Classifications you have created throughout the interface. This means that you will never encounter a button like 'Create new Object in Type'. Rather, buttons will contain the name of the Type or Classification as specified in the Data Design. If you have created a Type called 'Letter' you will be able to navigate to this Type in the Data module and click 'Add Letter' to create a new Object in this Type.
 
 ### Add / Edit / Delete an Object or Category
-
 To add an Object or Category, click 'Add [*name of Type/Classification*]'.
 
 To edit an Object or Category, click 'edit' at the relevant Object or Category.
 
 To delete an Object or Category, click 'del' at the relevant Object or Category.
 
-When you add a new Object or edit an existing Object, you spicify the name of the Object, a number of Object Descriptions, and a number of Sub-Objects. Whether you use a fixed field for the name of an Object, the number of Object Descriptions, and Sub-Objects is configured in the [Data Design](configuration/data_design/README.md) module.
+When you add a new Object or edit an existing Object, you spicify the name of the Object, a number of Object Descriptions, and a number of Sub-Objects. Whether you use a fixed field for the name of an Object, the number of Object Descriptions, and Sub-Objects is configured in the [Data Design](../../configuration/data_design/README.md) module.
 
-When you add a new Category or edit an existing Category, you spicify the name of the Category, and number of Category Descriptions. Whether you use a fixed field for the name of a Category and the number of Category Descriptions is configured in the [Data Design](configuration/data_design/README.md) module.
+When you add a new Category or edit an existing Category, you spicify the name of the Category, and number of Category Descriptions. Whether you use a fixed field for the name of a Category and the number of Category Descriptions is configured in the [Data Design](../../configuration/data_design/README.md) module.
 
 ### Name
 A single line input field. Enter a single line string (max 5000 characters). The name of an Object or Category stores unformatted characters.
@@ -72,5 +70,4 @@ Based on the settings of the Sub-Object, you can select a Reference or Point for
 Based on the settings of the Sub-Object, Sub-Object Descriptions can be added. These have the same options as the [Object Descriptions](#object_descriptions_and_category_descriptions). Relational Sub-Object Descriptions can contain only one relation.
 
 ### Save an Object or Category
-
 Click 'Save [*name of Type/Classification*]' to save an Object or Category.

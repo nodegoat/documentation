@@ -6,9 +6,9 @@ To query the nodegoat API you need a valid domain, a valid path, and a valid que
 
 GET https://nodegoat.io/project/1/data/type/2/scope/3/filter/4/object/5,6,7?object_id=8&search=A&form={}
 
-**Authenticated, access Project 1, access Project’s Data Design, request Types 2 & 3 & 4**
+**Authenticated, access Project 1, access Project’s data Model, request Types 2 & 3 & 4**
 
-GET https://nodegoat.io/project/1/design/type/2,3,4
+GET https://nodegoat.io/project/1/model/type/2,3,4
 
 #### Domain
 
@@ -40,9 +40,9 @@ Specify the mode. One of the following parameters has to be provided.
 
 | B | Description |
 | -- | -- |
-| __/ *ID*__ or __?id = *ID*__ | Directly access Objects with their corresponding nodegoat IDs or other identifiers (see [Data Design](configuration/data_design/README.md) on how to indicate what Object Descriptions can be used for identification). The ID can also be provided using the query component *id* (both GET and POST). The query component has to be used when identifiers contain characters reserved for URLs. |
+| __/ *ID*__ or __?id = *ID*__ | Directly access Objects with their corresponding nodegoat IDs or other identifiers (see [data Model](configuration/data_model/README.md) on how to indicate what Object Descriptions can be used for identification). The ID can also be provided using the query component *id* (both GET and POST). The query component has to be used when identifiers contain characters reserved for URLs. |
 | __/ data__ | Access the Project’s data. |
-| __/ design__ | Access the Projects's Data Design. |
+| __/ model__ | Access the Projects's data Model. |
 
 ##### //nodegoat/A/B:data/C
 
@@ -62,13 +62,13 @@ Apply Project- and Type-specific operations to the request. More than one of the
 | __/ filter / *ID*__ | Apply the specified filter to the request. Additionally, the filter can be manipulated in the query component of the request. |
 | __/ object / *ID*(,*ID*)__ | Select the specified Object(s). |
 
-##### //nodegoat/A/B:design/C
+##### //nodegoat/A/B:model/C
 
-Specify for which Type(s) to access the Data Design.
+Specify for which Type(s) to access the data Model.
 
 | C | Description |
 | -- | -- |
-| __/ type / *ID*(,*ID*)__ | Access the Data Design for the specified Type(s). |
+| __/ type / *ID*(,*ID*)__ | Access the data Model for the specified Type(s). |
 
 #### Component
 
@@ -78,7 +78,7 @@ The query component allows you to further specify your request by means of searc
 
 All parameters in the query component are optional. When combined, each additional parameter will filter the result (AND).
 
-Query the API for a Type's Data Design to get an overview of the possible IDs for Object Descriptions, Sub-Object Details, and Sub-Object Descriptions.
+Query the API for a Type's data Model to get an overview of the possible IDs for Object Descriptions, Sub-Object Details, and Sub-Object Descriptions.
 
 | Q | Description |
 | -- | -- |
@@ -86,22 +86,27 @@ Query the API for a Type's Data Design to get an overview of the possible IDs fo
 | __search = *value*__ | Quick search Objects for 'value'. |
 | __form = *value*__ | Apply a JSON-formatted [filter](/usage/filter/README.md). The form parameter allows you to customise and apply full-featured nodegoat filters to your query. |
 | __scope = *value*__ | Apply a JSON-formatted [filter](/usage/scope/README.md). The scope parameter allows you to customise and apply full-featured nodegoat scopes to your query. |
+| __mode = *mode*__ | Specifiy the output format: 'raw' for native and fast output of the data without additional processing such as parsing Object names, or 'default'. |
 | __limit = *nr*__ | Limit the results to a maximum amount of Objects. Handy for pagination purposes. |
 | __offset = *nr*__ | Offset the results with a specific amount of Objects. Handy for pagination purposes. |
 
-##### //nodegoat/A/B:design/C?Q
+##### //nodegoat/A/B:model/C?Q
 
-Design currently does not have an additional query component.
+All parameters in the query component are optional.
+
+| Q | Description |
+| -- | -- |
+| __mode = *mode*__ | Specifiy the output format: 'template' for relational name-based IDs instead of numeric IDs (easy for storage puposes, see [store Model](/usage/API/store.md#model)), or 'default'. |
 
 #### Response
 
 The result from your request to the nodegoat API can be found in the JSON response under the key 'data'. The result is a JSON dictionary that promotes direct lookup and access to its structure.
 
-The specific response depends on the mode (design or data, see the [previous Query section](/usage/API/query.md)) of your request.
+The specific response depends on the mode (model or data, see the [previous Query section](/usage/API/query.md)) of your request.
 
-##### Design
+##### Model
 
-In design mode the result contains the requested Type IDs with the Type's configuration.
+In model-mode the result contains the requested Type IDs with the Type's configuration.
 
 ##### Data
 

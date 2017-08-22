@@ -26,11 +26,11 @@ The nodegoat API allows external access to your projects and its data. Access ca
 
 The Public Interfaces module is available for multi-user nodegoat Domains.
 
-## Design
+## Model
 
-### Design
+### Model
 
-In Design you create, configure and reconfigure your custom Data Design. See the Data Design section for more information on how to work with Types, Classifications, and Reversed Classifications.
+In Model you create, configure and reconfigure your custom Data Model. See the Data Model section for more information on how to work with Types, Classifications, and Reversed Classifications.
 
 ### Import
 
@@ -38,4 +38,4 @@ In Import you upload and manage your source files and create and configure your 
 
 ### Linked Data
 
-In Linked Data you create and configure the linked data resources that you use in your Domain. See the Linked Data section in the Configuration section for more info on this. The Linked Data section in the Usage section outlines the usage of Linked Data resources in your Data Design.
+In Linked Data you create and configure the linked data resources that you use in your Domain. See the Linked Data section in the Configuration section for more info on this. The Linked Data section in the Usage section outlines the usage of Linked Data resources in your Data Model.

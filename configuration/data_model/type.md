@@ -1,6 +1,6 @@
 ### Type
 
-*Types contain Objects. Objects are things. In the Data Design module you design the structure of your Types. This structure describes the Objects in a Type. Objects are described by Object Descriptions, Sub-Objects, and Sub-Object Descriptions.*
+*Types contain Objects. Objects are things. In the data Model module you model the structure of your Types. This structure describes the Objects in a Type. Objects are described by Object Descriptions, Sub-Objects, and Sub-Object Descriptions.*
 
 #### Add / Edit a Type
 
@@ -126,8 +126,8 @@ Click 'Save Type' to save a Type.
 
 #### Empty a Type
 
-To empty a Type, click 'empty' at the relevant Type. This will remove all the Objects in this Type while leaving the Design of this Type in tact.
+To empty a Type, click 'empty' at the relevant Type. This will remove all the Objects in this Type while leaving the Model of this Type intact.
 
 #### Delete a Type
 
-To delete a Type, click 'delete' at the relevant Type. This will remove both the Objects in this Type plus the Design of this Type.
+To delete a Type, click 'delete' at the relevant Type. This will remove both the Objects in this Type plus the Model of this Type.
