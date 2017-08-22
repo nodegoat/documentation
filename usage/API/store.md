@@ -294,7 +294,7 @@ To both add and update Types in a single request, you access the path without a 
 
 When submitting data with the PATCH method, you can update the Type specified in the path or update the Types specified in the data. Any Object Description/Sub-Object/Sub-Object Description that is not specified in the submitted data will not be touched. For instance, this allows you to create or change specific Object Descriptions and configure new Sub-Objects.
 
-To remove a Object Description/Sub-Object/Sub-Object Description from the Type: provide their respective ID (or name as ID), and set their name to empty or null.
+To remove a Object Description/Sub-Object/Sub-Object Description from the Type, provide their respective ID (or name as ID), and set their name (e.g. 'object_description_name') to empty or null.
 
 To update a Type specified in the path 'https://nodegoat.io/model/type/1/', you submit a single Type template dictionary that only contains the data you want to update:
 
@@ -313,7 +313,7 @@ To update Types specified in the submitted data, you access the path without a T
 
 ###### DELETE
 
-To delete Types, you either apply the method DELETE to the path to a specific Type, e.g. 'https://nodegoat.io/model/type/1/', or you access the path without a Type ID and submit a dictionary with the Type IDs as keys:
+To delete Types, you either apply the method DELETE to the path to a specific Type, e.g. 'https://nodegoat.io/model/type/1/', or you access the path without a Type ID and submit a dictionary with the Type IDs (or Type names) as keys:
 
 ```json
 {
