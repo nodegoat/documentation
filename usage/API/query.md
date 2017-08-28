@@ -84,8 +84,8 @@ Query the API for a Type's data Model to get an overview of the possible IDs for
 | -- | -- |
 | __object_id = *ID*(,*ID*)__ | Select the specified Object(s). |
 | __search = *value*__ | Quick search Objects for 'value'. |
-| __form = *value*__ | Apply a JSON-formatted [filter](/usage/filter/README.md). The form parameter allows you to customise and apply full-featured nodegoat filters to your query. |
-| __scope = *value*__ | Apply a JSON-formatted [filter](/usage/scope/README.md). The scope parameter allows you to customise and apply full-featured nodegoat scopes to your query. |
+| __filter = *ID*__ or __*value*__ | Apply a JSON-formatted [filter](/usage/filter/README.md). The filter parameter allows you to customise and apply full-featured nodegoat filters to your query. |
+| __scope = *ID*__ or __*value*__ | Apply a JSON-formatted [filter](/usage/scope/README.md). The scope parameter allows you to customise and apply full-featured nodegoat scopes to your query. |
 | __output = *output*__ | Specifiy the output format: 'raw' for native and fast output of the data without additional processing such as parsing Object names, or 'default'. |
 | __limit = *nr*__ | Limit the results to a maximum amount of Objects. Handy for pagination purposes. |
 | __offset = *nr*__ | Offset the results with a specific amount of Objects. Handy for pagination purposes. |
