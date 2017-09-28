@@ -1,6 +1,6 @@
 ### Store
 
-To store data through the nodegoat API you need a valid domain, a valid path, and use user authentication. The data you submit has to be formatted in JSON. Storing data in nodegoat will start a new [transaction](https://en.wikipedia.org/wiki/Database_transaction): the transaction will be commited when all data is successfully processed, or rolled back when an error occurs.
+To store data through the nodegoat API you need a valid domain, a valid path, and use user authentication. The data you submit has to be formatted in JSON. Storing data in nodegoat will start a new [transaction](https://en.wikipedia.org/wiki/Database_transaction) for every 1000 Objects: the transaction will be commited when all data is successfully processed, or rolled back when an error occurs. In case of an error, a message is included that specifies the ID of the last processed Object.
 
 **Example:** The following URL contains the possible basic domain and path parameters to store data to an Object:
 
