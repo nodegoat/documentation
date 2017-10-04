@@ -32,7 +32,7 @@ Check the 'In Overviews' checkbox to show this name in the overviews.
 
 ###### Object Descriptions
 
-*Intrinsic/static attributes of an Object are described by Object Descriptions.*
+Intrinsic/static attributes of an Object are described by Object Descriptions.
 
 Click 'add' to create new Object Descriptions.
 
@@ -76,7 +76,7 @@ Per Object Description you can check or uncheck six checkboxes to specify how th
 
 ##### Sub-Objects
 
-*Changing/contextualised attributes of an Object are described by Sub-Objects.*
+Changing/contextualised attributes of an Object are described by Sub-Objects.
 
 Click the tab 'Sub-Object' to configure the Sub-Objects of a Type.
 

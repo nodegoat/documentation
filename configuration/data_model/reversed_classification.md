@@ -23,5 +23,5 @@ Select an option to classify Objects with 'None', a 'Type', or a 'Classification
 
 Select an option to name Reversed Classifications either by a custom name or a custom name plus a Classification.
 
-To make use of a Reversed Classification, you have to include it in a [Description](/configuration/data_model/type.md#description) in the Type or Classification that you want to classify.
+To make use of a Reversed Classification, you have to include it in a [Description](/configuration/data_model/type.md#object-description) in the Type or Classification that you want to classify.
 

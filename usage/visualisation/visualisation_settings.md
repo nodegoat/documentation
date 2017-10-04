@@ -71,7 +71,7 @@ Use these settings to customise the design and behaviour of the visualisation.
 | Name | Default value | Description |
 | -- | -- | -- |
 | Show Geometric Information | No | Display information on the total distance, longest distance, shortest distance, and total surface. |
-| Map | //mt{s}.googleapis.com/vt?pb=!1m4!1m3!1i{z}!2i{x}!3i{y}!2m3!1e0!2sm!3i278000000!3m14!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjE3fHAudjpvZmYscy50OjE4fHAudjpvZmYscy50OjIwfHMuZTpsfHAudjpvZmYscy50OjgxfHAudjpvZmYscy50OjJ8cC52Om9mZixzLnQ6NDl8cC52Om9mZixzLnQ6NTB8cy5lOmx8cC52Om9mZixzLnQ6NHxwLnY6b2ZmLHMudDo2fHMuZTpsfHAudjpvZmY!4e0!20m1!1b1 and Map data ©2017 Google | Tile server used for the map, plus attribution information. |
+| Map | _Click 'Default Visuals' to load the default map tiles._ | Tile server used for the map, plus attribution information. |
 | Background Colour | none | Backgound colour of the visualisation. This overrides the map tiles. |
 | Mode | Connection | Select 'Connection' for paths, and 'Movement'. The 'Movement' option is only available using a 'Pixel' display mode. |
 | Display |  Vector (Interact) | The 'Vector (Interact)' display mode uses SVG elements to display the visualisation. The 'Pixel (Performance)' display mode uses a canvas to display the visualisation. When dealing with larg amounts of data, the pixel display mode will give better performance. |
@@ -80,10 +80,10 @@ Use these settings to customise the design and behaviour of the visualisation.
 
 | Name | Default value | Accepted values | Description |
 | -- | -- | -- |
-| `move_continuous` | `true` | `true`/`false` | Allow for a single move or a coninuous move. |
-| `move_retain` | `false` | `false`/`single`/`all` | Retain moving dots if Object is removed. |
-| `move_unit` | `pixel` | pixel / day | Movemenent speed is based on distance in pixels or chronological distance. |
-| `move_chronological` | `false` | `true`/`false` | Sets `move_continuous` to `false`, `move_retain` to `false` and	`move_unit` to 'day'. Allows the visualisation to be played chronologically. |
+| `move_continuous` | `true` | `true` / `false` | Allow for a single move or a coninuous move. |
+| `move_retain` | `false` | `false` / single / all | Retain moving dots if Object is removed. |
+| `move_unit` | pixel | pixel / day | Movemenent speed is based on distance in pixels or chronological distance. |
+| `move_chronological` | `false` | `true` / `false` | Sets `move_continuous` to `false`, `move_retain` to `false` and	`move_unit` to 'day'. Allows the visualisation to be played chronologically. |
 | `move_speed` | 30 | [_integer_] | Units per second. |
 | `move_duration_min` | `false` | `false` / [_integer_] | Minimal duration of a moving dot. |
 | `move_duration_max` | `false` | `false` / [_integer_] | Maximum duration of a moving dot. |
@@ -96,15 +96,15 @@ Use these settings to customise the design and behaviour of the visualisation.
 | `move_connection_line_apply_opacity` | moved | move / moved | tba |
 | `move_warp_length` | 8 | [_integer_] | tba |
 | `hint_dot` | pulse | `false`/ pulse / location | tba |
-| `move_hint_dot` | `false` | `true`/`false` | tba |
-| `moved_hint_dot` | `false` | `true`/`false` | tba |
-| `hint_line` | `false` | `true`/`false` | tba |
-| `moved_hint_line` | `false` | `true`/`false` | tba |
+| `move_hint_dot` | `false` | `true` / `false` | tba |
+| `moved_hint_dot` | `false` | `true` / `false` | tba |
+| `hint_line` | `false` | `true` / `false` | tba |
+| `moved_hint_line` | `false` | `true` / `false` | tba |
 | `max_hint_dots` | 100 | [_integer_] | tba |
 | `dot_icon` | circle | circle / square | Set to square to show nodes as squares. |
-| `info_show` | `false` | `true`/`false`/ [_integer_] | Sets info_show_dot and info_show_line. |
-| `info_show_dot` | `false` | `true`/`false`/ [_integer_] | Set to `true` to show info per dot. Set integer to maximise amount of info shown. |
-| `info_show_line` | `false` | `true`/`false`/ [_integer_] | Set to `true` to show info per line. Set integer to maximise amount of info shown. |
+| `info_show` | `false` | `true` / `false`/ [_integer_] | Sets info_show_dot and info_show_line. |
+| `info_show_dot` | `false` | `true` / `false`/ [_integer_] | Set to `true` to show info per dot. Set integer to maximise amount of info shown. |
+| `info_show_line` | `false` | `true` / `false`/ [_integer_] | Set to `true` to show info per line. Set integer to maximise amount of info shown. |
 | `info_color` | #000000 | [_hexadecimal color value_] | Colour of info. |
 | `info_mode` | all | all/hover | Set to hover to only show info on hover. |
 | `info_condition` | `false` | `false`/ [_condition name_] | Set condition name that shows info. |
