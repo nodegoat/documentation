@@ -40,21 +40,21 @@ Give an Object Description a name by entering a name.
 
 Select the kind of data that will be stored in the Object Description:
 
-| Name | Description | Limit |
-| -- | -- | -- |
-| String | A single line string. | 5000 characters |
-| Type | A relation to another Object in the same or a different Type. One Object Description can contain multiple relations to the referenced Type. | N/A |
-| Classification |  A relation to a Category in a Classification. One Object Description can contain multiple relations to one Classification. | N/A |
-| Reversed Classification |  A relation to a Reversed Classification. | N/A |
-| Integer | An integer (whole number, no decimals). | 11 digits |
-| Text | Non-formatted text field. | 65535 characters |
-| Text (layout) | Formatted text field. | 65535 characters |
-| Text (Tags & layout) | Formatted text field. In this Object Description, words can be related to other Objects | 65535 characters |
-| True/False | A true/false field. | N/A |
-| Date | A date field, using the following date formats:<ul><li>y (1687)</li><li>-y (-800)</li><li> m-y (03-1687 / 3-1687)</li><li>m--y (03--800 / 3--800)</li><li>-m-y (-03-800 / -3-800)</li><li>d-m-y (09-03-1687 / 9-3-1687)</li><li> d-m--y (09-03--800 / 9-3--800)</li><li>-d-m-y (-09-03-800 / -9-3-800</li></ul> | N/A |
-| Media | Upload any kind of media (i.e. png, pdf, mp3). | N/A |
-| Media (External) | Link to external media resources (e.g. http://url.com/map.png or http://youtu.be/jm1os4VzTgA). | N/A |
-| External | An external relation using URIs. URIs can be plain URLs, or can be retrieved by connecting to the nodegoat Linked Data module to dynamically query SPARQL/API resources like VIAF or Wikidata. | N/A |
+| Name | Description |
+| -- | -- |
+| String | A single line string. |
+| Type | A relation to another Object in the same or a different Type. One Object Description can contain multiple relations to the referenced Type. |
+| Classification |  A relation to a Category in a Classification. One Object Description can contain multiple relations to one Classification. |
+| Reversed Classification |  A relation to a Reversed Classification. |
+| Integer | An integer (whole number, no decimals). |
+| Text | Non-formatted text field. |
+| Text (layout) | Formatted text field. |
+| Text (Tags & layout) | Formatted text field. In this Object Description, words can be related to other Objects |
+| True/False | A true/false field. |
+| Date | A date field, using the following date formats:<ul><li>y (1687)</li><li>-y (-800)</li><li> m-y (03-1687 / 3-1687)</li><li>m--y (03--800 / 3--800)</li><li>-m-y (-03-800 / -3-800)</li><li>d-m-y (09-03-1687 / 9-3-1687)</li><li> d-m--y (09-03--800 / 9-3--800)</li><li>-d-m-y (-09-03-800 / -9-3-800</li></ul> |
+| Media | Upload any kind of media (i.e. png, pdf, mp3). |
+| Media (External) | Link to external media resources (e.g. http://url.com/map.png or http://youtu.be/jm1os4VzTgA). |
+| External | An external relation using URIs. URIs can be plain URLs, or can be retrieved by connecting to the nodegoat Linked Data module to dynamically query SPARQL/API resources like VIAF or Wikidata. |
 
 Per Object Description you can check or uncheck six checkboxes to specify how the Object Description will be used.
 

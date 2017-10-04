@@ -33,13 +33,13 @@ A relation to a Reversed Classification, not editable.
 An integer. Whole number, no decimals (max 11 digits)
 
 #### Text
-A multi-line input field. Enter non-formatted text (max 65535 characters).
+A multi-line input field. Enter non-formatted text.
 
 #### Text (layout)
-A multi-line input field. Enter formatted text (max 65535 characters).
+A multi-line input field. Enter formatted text.
 
 #### Text (tags & layout)
-A multi-line input field. Enter formatted text (max 65535 characters). In this Object Description, words can be related to other Objects. To create a textual relation, select a word and click the green 'object' button that appears. Select a Type and find one or more Objects. To edit a textual relation, click on the relationship and click the blue 'object' button. Click the blue '&' button to re-use a previously used relation. Click the blue '+' button to select the last used relation. Click the red 'x' button to remove an existing relation.
+A multi-line input field. Enter formatted text. In this Object Description, words can be related to other Objects. To create a textual relation, select a word and click the green 'object' button that appears. Select a Type and find one or more Objects. To edit a textual relation, click on the relationship and click the blue 'object' button. Click the blue '&' button to re-use a previously used relation. Click the blue '+' button to select the last used relation. Click the red 'x' button to remove an existing relation.
 
 #### True/False
 A true/false field.
