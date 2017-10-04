@@ -1,7 +1,7 @@
 ## Import
 
 ### Sources
-Use the 'Source' tab to upload a file that contains your data. The source file can be either a CSV file or JSON file. For the creation of UTF-8 encoded CSV files, we recommend using LibreOffice. Make sure the number of column headings match the number of columns used in the file. For creating JSON files easily, [OpenRefine](http://openrefine.org/) can be helpful. Or use xslt to transform your XML files into one of these structures.
+Use the 'Source' tab to upload a file that contains your data. The source file can be either a CSV file or JSON file. For the creation of UTF-8 encoded CSV files, we recommend using LibreOffice. Make sure the number of column headings matches the number of columns used in the file. For creating JSON files easily, [OpenRefine](http://openrefine.org/) can be helpful. Or use xslt to transform your XML files into one of these structures.
 
 To add a source file, click 'Add Source'.
 
