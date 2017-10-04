@@ -2,11 +2,15 @@
 
 Classifications contain Categories. Categories are 'labels'.
 
-#### Add / Edit a Classification
-
 To add a Classification, click 'Add Classification'.
 
-To edit a Classification, click 'edit' at the relevant Classification.
+To edit an existing Classification, click the blue 'edit' button at the relevant Classification.
+
+To empty an existing Classification, click the red 'empty' button at the relevant Classification. This will remove all the Categories in this Classification while leaving the Model of this Classification intact.
+
+To delete an existing Classification, click the red 'del' button at the relevant Classification. This will remove both the Categories in this Classification plus the Model of this Classification.
+
+#### Add / Edit a Classification
 
 Specify the name of the Classification. This name is used throughout nodegoat to identify this Classification.
 
@@ -28,10 +32,3 @@ Give an Category Description a name by entering a name.
 
 The same kinds of data can be selected for a Category Description as for an [Object Description](/configuration/project/data-model/type.md#object-descriptions).
 
-#### Empty a Classification
-
-To empty a Classification, click 'empty' at the relevant Classification. This will remove all the Objects in this Classification while leaving the Model of this Classification in tact.
-
-#### Delete a Classification
-
-To delete a Classification, click 'delete' at the relevant Classification. This will remove both the Objects in this Classification plus the Model of this Classification.

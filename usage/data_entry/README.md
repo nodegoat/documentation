@@ -1,16 +1,16 @@
 ## Data Entry
-Once you have a Project and Data Design running, you can enter data in the Data module. Here you create new Objects in a Type or new Categories in a Classification. nodegoat follows your custom Data Design and will use the names of the Types and Classifications you have created throughout the interface. This means that you will never encounter a button like 'Create new Object in Type'. Rather, buttons will contain the name of the Type or Classification as specified in the Data Design. If you have created a Type called 'Letter' you will be able to navigate to this Type in the Data module and click 'Add Letter' to create a new Object in this Type.
+Once you have a Project and Data Model running, you can enter data in the Data module. Here you create new Objects in a Type or new Categories in a Classification. nodegoat follows your custom Data Model and will use the names of the Types and Classifications you have created throughout the interface. This means that you will never encounter a button like 'Create new Object in Type'. Rather, buttons will contain the name of the Type or Classification as specified in the Data Model. If you have created a Type called 'Letter' you will be able to navigate to this Type in the Data module and click 'Add Letter' to create a new Object in this Type.
 
 ### Add / Edit / Delete an Object or Category
 To add an Object or Category, click 'Add [*name of Type/Classification*]'.
 
-To edit an Object or Category, click 'edit' at the relevant Object or Category.
+To edit an Object or Category, click the blue 'edit' button at the relevant Object or Category.
 
-To delete an Object or Category, click 'del' at the relevant Object or Category.
+To delete an Object or Category, click the red 'del' button at the relevant Object or Category.
 
-When you add a new Object or edit an existing Object, you spicify the name of the Object, a number of Object Descriptions, and a number of Sub-Objects. Whether you use a fixed field for the name of an Object, the number of Object Descriptions, and Sub-Objects is configured in the [Data Design](../../configuration/data_design/README.md) module.
+When you add a new Object or edit an existing Object, you spicify the name of the Object, a number of Object Descriptions, and a number of Sub-Objects. Whether you use a fixed field for the name of an Object, the number of Object Descriptions, and Sub-Objects is configured in the [Data Model](/configuration/data_model/README.md) module.
 
-When you add a new Category or edit an existing Category, you spicify the name of the Category, and number of Category Descriptions. Whether you use a fixed field for the name of a Category and the number of Category Descriptions is configured in the [Data Design](../../configuration/data_design/README.md) module.
+When you add a new Category or edit an existing Category, you spicify the name of the Category, and a number of Category Descriptions. Whether you use a fixed field for the name of a Category and the number of Category Descriptions is configured in the [Data Model](/configuration/data_model/README.md) module.
 
 ### Name
 A single line input field. Enter a single line string (max 5000 characters). The name of an Object or Category stores unformatted characters.
@@ -55,7 +55,7 @@ Upload any kind of media (i.e. png, pdf, mp3).
 Link to external media resources (e.g. http://url.com/map.png or http://youtu.be/jm1os4VzTgA)
 
 #### External
-An external relation using URIs. URIs can be plain URLs, or can be retrieved by connecting to the nodegoat Linked Data module to dynamically query SPARQL/API resources like VIAF or Wikipedia
+An external relation using URIs. URIs can be plain URLs, or can be retrieved by connecting to the nodegoat [Linked Data](/configuration/linked_data/README.md) module to dynamically query SPARQL/API resources like VIAF or Wikidata. Enter a string to query the linked data resource connected to this Description. Click the grey 'filter' button to select a different linked data resource. Click on the funnel icon to open the filter that has been configured in the [Linked Data](/configuration/linked_data/README.md) module.
 
 ### Sub-Objects
 In case a Type is configured to contain Sub-Objects, the Editor for Sub-Objects will appear. Unique Sub-Objects can be added by clicking the '+' button. Non-unique Sub-Objects can be added by clicking the '+' button or the '+\+' button. The '+\+' button will open a popup that allows you to predefine multiple Sub-Objects.
@@ -67,7 +67,7 @@ Based on the settings of the Sub-Object, you can either specify a period by mean
 Based on the settings of the Sub-Object, you can select a Reference or Point for the location of the Sub-Object (the Area option is not available yet). When you select 'Reference' you can select a Type and Sub-Object. If one or more of these options are locked, the locked options can not be selected. When you select 'Point' you can either enter a latitude and longitude value or click on the green 'map' button to select a point on a map. If the location is taken from another source, the location is not editable.
 
 #### Sub-Object Descriptions
-Based on the settings of the Sub-Object, Sub-Object Descriptions can be added. These have the same options as the [Object Descriptions](#object_descriptions_and_category_descriptions). Relational Sub-Object Descriptions can contain only one relation.
+Based on the settings of the Sub-Object, Sub-Object Descriptions can be added. These have the same options as the [Object Descriptions](#object-descriptions-and-category-descriptions). Relational Sub-Object Descriptions can contain only one relation.
 
 ### Save an Object or Category
 Click 'Save [*name of Type/Classification*]' to save an Object or Category.

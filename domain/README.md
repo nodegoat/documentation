@@ -12,11 +12,11 @@ In Management you configure the settings of your nodegoat Domain.
 
 ### Projects
 
-In Projects you create and configure projects in your Domain. See the Project section for a description of the role of projects and how to configure projects.
+In Projects you create and configure projects in your Domain. See the [Project section](/configuration/projects/README.md) for a description of the role of projects and how to configure projects.
 
 ### Users
 
-The Users module is available for multi-user nodegoat Domains. In the Users module you can create and manage user accounts of your nodegoat Domain. See the Users section for more information on this.
+The Users module is available for multi-user nodegoat Domains. In the Users module you can create and manage user accounts of your nodegoat Domain. See the [Users section](/configuration/users/README.md) for more information on this.
 
 ### API
 
@@ -24,18 +24,18 @@ The nodegoat API allows external access to your projects and its data. Access ca
 
 ### Public Interfaces
 
-The Public Interfaces module is available for multi-user nodegoat Domains.
+The Public Interfaces module is available for multi-user nodegoat Domains. See the [Public Interface section](/configuration/public_interfaces/README.md) for more information on this.
 
 ## Model
 
 ### Model
 
-In Model you create, configure and reconfigure your custom Data Model. See the Data Model section for more information on how to work with Types, Classifications, and Reversed Classifications.
+In Model you create, configure and reconfigure your custom Data Model. See the [Data Model section](/configuration/data_model/README.md) for more information on how to work with Types, Classifications, and Reversed Classifications.
 
 ### Import
 
-In Import you upload and manage your source files and create and configure your Import Templates. See the Import Section for more information on this.
+In Import you upload and manage your source files and create and configure your Import Templates. See the [Import Section](/configuration/import/README.md) for more information on this.
 
 ### Linked Data
 
-In Linked Data you create and configure the linked data resources that you use in your Domain. See the Linked Data section in the Configuration section for more info on this. The Linked Data section in the Usage section outlines the usage of Linked Data resources in your Data Model.
+In Linked Data you create and configure the linked data resources that you use in your Domain. See the [Linked Data section](/configuration/linked_data/README.md) in the Configuration section for more information on this.

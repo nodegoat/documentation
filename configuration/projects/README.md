@@ -2,13 +2,11 @@
 
 A Project is a selection of Types and Classifications to which specific settings can be assigned. You can specify the order in which the Types and Classifications are displayed, assign Project-specific colours to Types and Classifications and specify which Types can be used as Location References and Sources. Types and Classifications can be included in multiple projects.
 
-### Add / Edit / Delete a Project
-
 To add a Project, click 'Add Project'.
 
-To edit a Project, click 'edit' at the relevant Project.
+To edit an existing Project, click the blue 'edit' button at the relevant Project.
 
-To delete a Project, click 'del' at the relevant Project.
+To delete an existing Project, click the red 'del' button at the relevant Project.
 
 ### Project settings
 

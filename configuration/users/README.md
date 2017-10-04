@@ -2,13 +2,11 @@
 
 A User can be given access to one or more Projects. By specifying a Clearance Level and Page Clearance, Users can be given access to functionalities and pages.
 
-### Add / Edit / Delete a User
-
 To add a User, click 'Add User'.
 
-To edit a User, click 'edit' at the relevant User.
+To edit a User, click the blue 'edit' button at the relevant User.
 
-To delete a User, click 'del' at the relevant User.
+To delete a User, click the red 'del' button at the relevant User.
 
 ### User Settings
 
@@ -27,7 +25,7 @@ Select the projects to which the User has access.
 2. **Interact**: Allowed to participate in the 'Discussion' tab.
 3. **Under Review**: Allowed to add, delete, edit, and export data. All changes will be marked for review. Changes have to be accepted or rejected by a User or Admin before they become effective.
 4. **User**: Changes become immediately effective. Allowed to accept or reject changes made by 'Under Review' Users.
-5. **Admin**: Allowed to import, create and update Projects, Users, Data Design, Linked Data Resources, APIs, Public User Interfaces.
+5. **Admin**: Allowed to import, create and update Projects, Users, Data Model, Linked Data Resources, APIs, Public User Interfaces.
 
 ### Page Clearance
 Select the pages to which the User has access. Even though non-'Admin' Users may be given access to other pages, they will not be able to perform any actions outside the 'Data' module. 
