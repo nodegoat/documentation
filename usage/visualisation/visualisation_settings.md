@@ -41,19 +41,20 @@ Use these settings to customise the design and behaviour of the visualisation.
 
 | Name  | Default value | Description |
 | -- | -- | -- |
-| Dot Colour | none | Colour of nodes. Overrides all other colour settings. |
+| Dot Colour | none | Colour of location dots. Overrides all other colour settings. |
 | Dot Colour Condition | none | Name of the Condition that sets the colour of the node. |
-| Dot Min Size | 8 | Minimal size of nodes. |
-| Dot Max Size | 20 | Maximum size of nodes. |
-| Dot Stroke Colour | #f0f0f0 | Colour of stroke of nodes. |
-| Dot Stroke Width | 1.5 | Width of stroke of nodes. |
+| Dot Min Size | 8 | Minimal size of location dots. |
+| Dot Max Size | 20 | Maximum size of location dots. |
+| Dot Stroke Colour | #f0f0f0 | Colour of stroke of location dots. |
+| Dot Stroke Width | 1.5 | Width of stroke of location dots. |
 | Show Location | No | Display the name of a Location Reference. |
 | Location Colour | #000000 | Colour of the name of a Location Reference. |
 | Location Size | 8 | Size of the name of a Location Reference. |
+| Location Threshold | 1 | The weight a location should have (amount of Sub-Objects) for the Location Reference to be displayed by default. |
 | Location Condition | none | Name of the Condition that displays the name of a Location Reference. |
-| Line Colour | none | Colour of lines. |
-| Line Min Width | 2 | Minimal width of lines. |
-| Line Max Width | 10 | Maximum width of lines. |
+| Line Colour | none | Colour of lines (or line dots in 'Movement' mode). |
+| Line Min Width | 2 | Minimal width of lines (or line dots in 'Movement' mode). |
+| Line Max Width | 10 | Maximum width of lines (or line dots in 'Movement' mode). |
 | Line Offset | 6 | Curve. |
 | Show Visual Hints | Yes | Display visual hints if a new Sub-Object is shown. |
 | Visual Hint Colour | #0092d9 | Colour of the visual hint. |
@@ -74,25 +75,25 @@ Use these settings to customise the design and behaviour of the visualisation.
 | Map | _Click 'Default Visuals' to load the default map tiles._ | Tile server used for the map, plus attribution information. |
 | Background Colour | none | Backgound colour of the visualisation. This overrides the map tiles. |
 | Mode | Connection | Select 'Connection' for paths, and 'Movement'. The 'Movement' option is only available using a 'Pixel' display mode. |
-| Display |  Vector (Interact) | The 'Vector (Interact)' display mode uses SVG elements to display the visualisation. The 'Pixel (Performance)' display mode uses a canvas to display the visualisation. When dealing with larg amounts of data, the pixel display mode will give better performance. |
+| Display |  Vector | The 'Vector' display mode uses SVG elements to display the visualisation. The 'Pixel' display mode uses a canvas to display the visualisation. When dealing with larg amounts of data, the pixel display mode will give better performance. |
 
 ###### Advanced
 
 | Name | Default value | Accepted values | Description |
 | -- | -- | -- |
 | `move_continuous` | `true` | `true` / `false` | Allow for a single move or a coninuous move. |
-| `move_retain` | `false` | `false` / single / all | Retain moving dots if Object is removed. |
+| `move_retain` | `false` | `false` / single / all | Retain moving line dots if Object is removed. |
 | `move_unit` | pixel | pixel / day | Movemenent speed is based on distance in pixels or chronological distance. |
 | `move_chronological` | `false` | `true` / `false` | Sets `move_continuous` to `false`, `move_retain` to `false` and	`move_unit` to 'day'. Allows the visualisation to be played chronologically. |
 | `move_speed` | 30 | [_integer_] | Units per second. |
-| `move_duration_min` | `false` | `false` / [_integer_] | Minimal duration of a moving dot. |
-| `move_duration_max` | `false` | `false` / [_integer_] | Maximum duration of a moving dot. |
+| `move_duration_min` | `false` | `false` / [_integer_] | Minimal duration of a moving line dot. |
+| `move_duration_max` | `false` | `false` / [_integer_] | Maximum duration of a moving line dot. |
 | `move_duration_info_min` | `false` | `false` / [_integer_] | Seconds. |
 | `move_duration_info_max` | `false` | `false` / [_integer_] | Seconds. |
 | `move_glow` | `false` | `true`/`false` | tba |
-| `connection_line_opacity` | 0.4 | 0 - 1 | Default opacity of the lines connecting nodes. |
-| `connection_line_opacity_range_min` | 0.5 | 0 - 1 | Minimal opacity of the lines connecting nodes. |
-| `connection_line_opacity_range_max` | 1 | 0 - 1 | Maximum opacity of the lines connecting nodes. |
+| `connection_line_opacity` | 0.4 | 0 - 1 | Default opacity of the lines connecting location dots. |
+| `connection_line_opacity_range_min` | 0.5 | 0 - 1 | Minimal opacity of the lines connecting location dots. |
+| `connection_line_opacity_range_max` | 1 | 0 - 1 | Maximum opacity of the lines connecting location dots. |
 | `move_connection_line_apply_opacity` | moved | move / moved | tba |
 | `move_warp_length` | 8 | [_integer_] | tba |
 | `hint_dot` | pulse | `false`/ pulse / location | tba |
@@ -101,14 +102,17 @@ Use these settings to customise the design and behaviour of the visualisation.
 | `hint_line` | `false` | `true` / `false` | tba |
 | `moved_hint_line` | `false` | `true` / `false` | tba |
 | `max_hint_dots` | 100 | [_integer_] | tba |
-| `dot_icon` | circle | circle / square | Set to square to show nodes as squares. |
+| `dot_icon` | circle | circle / square | Set to square to show location dots as squares. |
+| `dot_icons_size` | 15 | [_integer_] | Set to size of the Condition icons. |
+| `dot_icons_offset` | 4 | [_integer_] | Set the position of the Condition icons relative to the dot. Negative number to positon above the dot, positive for below, 0 to center on the dot. |
+| `location_offset` | -5 | [_integer_] | Set the position of the location relative to the dot. Negative number to positon above the dot, positive for below, 0 to center on the dot. |
 | `info_show` | `false` | `true` / `false`/ [_integer_] | Sets info_show_dot and info_show_line. |
 | `info_show_dot` | `false` | `true` / `false`/ [_integer_] | Set to `true` to show info per dot. Set integer to maximise amount of info shown. |
 | `info_show_line` | `false` | `true` / `false`/ [_integer_] | Set to `true` to show info per line. Set integer to maximise amount of info shown. |
 | `info_color` | #000000 | [_hexadecimal color value_] | Colour of info. |
-| `info_mode` | all | all/hover | Set to hover to only show info on hover. |
+| `info_mode` | all | all / hover | Set to hover to only show info on hover. |
 | `info_condition` | `false` | `false`/ [_condition name_] | Set condition name that shows info. |
-
+| `info_content` | default | default / scope / condition | Define what information is included in the location dot and line info displays. |
 
 #### Social
 

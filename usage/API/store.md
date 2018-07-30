@@ -63,6 +63,18 @@ Specify for which Type you want to change the template. You can either target a 
 | -- | -- |
 | __/ type / *ID*__ | Access data for the specified Type. |
 
+#### Component
+
+The option component allows you to further specify your request by means of option parameters.
+
+##### //nodegoat/A/B:data/C/D?O
+
+All parameters in the option component are optional.
+
+| O | Description |
+| -- | -- |
+| __versioning = *1*__ or __*0*__ | Disable or enable [version management](/usage/data_entry/sourcing_version_management.md). Versioning is enabled by default. When disabled all data will be stored directly towards the same version-state. When updating data, this will then not check whether a value really needs to be updated and what the changes are, it will always overwrite the existing value with the one you provide. This is an advanced feature and should be used accordingly. |
+
 #### Method
 
 The request method allows you to specify the operation you want to perform for either Object data in data mode or Type templates in data Model mode.
