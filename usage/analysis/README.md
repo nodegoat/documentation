@@ -14,7 +14,7 @@ The currently available algorithms are:
 * Count
 * Shortest path
 * nodegoat shortest path
-	Shortest path with betweenness centrality; highlight node relevance within shortest paths.
+  Shortest path with betweenness centrality; highlight node relevance within shortest paths.
 * Betweenness centrality
 * Closeness centrality
 * Closeness eccentricity
