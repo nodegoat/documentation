@@ -13,8 +13,8 @@ The Scope allows you to create edges between the source nodes (Objects in the se
 The currently available algorithms are:
 * Count
 * Shortest path
-* nodegoat path  
-  highlight node relevance within shortest paths; calculate shortest path with a mode of betweenness centrality.
+* nodegoat path
+  Highlight node relevance within shortest paths; calculate shortest path with a mode of betweenness centrality.
 * Betweenness centrality
 * Closeness centrality
 * Closeness eccentricity
