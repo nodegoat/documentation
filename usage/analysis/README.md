@@ -13,6 +13,8 @@ The currently available algorithms are:
 * Shortest path
 * Betweenness centrality
 * Closeness centrality
+* Closeness eccentricity
+* Clustering Coefficient
 * Pagerank
 
 ### Context
