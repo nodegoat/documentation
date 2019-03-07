@@ -11,7 +11,7 @@ Use the [Context](/usage/analysis/README.md#context) to include results saved to
 The Scope allows you to create edges between the source nodes (Objects in the selection of the currently active Type) and target nodes (Objects referenced by the indicated path in the Scope).
 
 The currently available algorithms are:
-* Count
+* Degree Centrality
 * Shortest path
 * nodegoat path  
   Highlight node relevance within shortest paths; calculate shortest path with a mode of betweenness centrality.
